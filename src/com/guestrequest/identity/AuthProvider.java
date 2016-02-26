@@ -9,9 +9,12 @@ public class AuthProvider {
 		
 		if ( !(login.getUsername().equals("admin")
 				&& login.getPassword().equals("admin"))) {
-			throw new UserNotFoundException("");
+			throw new UserNotFoundException("Tira os Zoio vc nao tem os poderes necessários para acessar o mega sistema");
 		}
 		
+		User user = new User("Mega Admin" 
+							, "megaadmin@guestrequest.com"
+							, login);
 		
 		return user;
 	}

@@ -1,6 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 
+<%
+	String username = request.getParameter("username") != null 
+							? request.getParameter("username") : "";
+
+	String password = request.getParameter("password") != null 
+							? request.getParameter("password") : "";
+
+	String message =  request.getAttribute("message") != null 
+							? (String) request.getAttribute("message")
+									: "";
+	 						
+%>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -26,12 +40,24 @@
 
 	<div class="container">
 		
+		<% if (!message.equals ("")) { %>
+		<div class="alert alert-danger">
+			<h4><%= message %></h4>
+		</div>
+		<% } %>
+		
 		<form action="login" method="post" name="Login_Form" class="form-signin">       
 		    <h3 class="form-signin-heading">Welcome Back! Please Sign In</h3>
 			  <hr class="colorgraph"><br>
 			  
-			  <input type="text" class="form-control" name="Username" placeholder="Username" required="" autofocus="" />
-			  <input type="password" class="form-control" name="Password" placeholder="Password" required=""/>     		  
+			  <input type="text" class="form-control" 
+			  	name="username" placeholder="Username" 
+			  	value="<%= username %>"
+			  	required="" autofocus="" />
+			  <input type="password" class="form-control" 
+			  	name="password" placeholder="Password" required=""
+			  	value="<%= password %>"
+			  	/>     		  
 			 
 			  <button class="btn btn-lg btn-primary btn-block"  name="Submit" value="Login" type="Submit">Login</button>  			
 		</form>			

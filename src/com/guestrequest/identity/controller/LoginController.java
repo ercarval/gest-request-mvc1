@@ -9,6 +9,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.guestrequest.identity.AuthProvider;
+import com.guestrequest.identity.Login;
+import com.guestrequest.identity.User;
+import com.guestrequest.identity.exception.UserNotFoundException;
+
 /**
  * Servlet implementation class LoginController
  */
@@ -32,8 +37,8 @@ public class LoginController extends HttpServlet {
 
 		RequestDispatcher dispatcher = request
 				.getRequestDispatcher("signin.jsp");
-		dispatcher.forward(request, response);
-
+		dispatcher.forward(request, response);	
+		
 	}
 
 	/**
@@ -43,6 +48,28 @@ public class LoginController extends HttpServlet {
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 
+		String username = request.getParameter("username");
+		String password = request.getParameter("password");
+		
+		password = (password == null) ? "" : password;
+		
+		Login login = new Login (username,password);
+		AuthProvider provider = new AuthProvider();
+
+		try {
+			
+			User user = provider.authenticate(login);
+		
+		} catch (UserNotFoundException e) {
+			
+			request.setAttribute("message", e.getMessage());
+			
+			doGet(request, response);
+			return;
+		}
+		
+		response.sendRedirect("index.jsp");
+		
 	}
 
 }
