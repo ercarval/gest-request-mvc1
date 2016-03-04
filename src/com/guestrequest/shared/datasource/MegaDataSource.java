@@ -1,11 +1,15 @@
 package com.guestrequest.shared.datasource;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class MegaDataSource {
 	
 	private String name;
 	
 	public MegaDataSource() {
 		name = "Mega DataSource";
+		System.out.println("MegaDataSource instanciada ... !!! ");
 	}
 
 	public String getName() {
