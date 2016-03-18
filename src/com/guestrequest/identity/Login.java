@@ -1,5 +1,7 @@
 package com.guestrequest.identity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 public class Login {
 
 	private String username;
@@ -21,6 +23,8 @@ public class Login {
 		this.username = username;
 	}
 
+	
+	@JsonIgnore
 	public String getPassword() {
 		return password;
 	}
