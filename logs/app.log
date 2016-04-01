@@ -1,0 +1,21 @@
+01/04/2016 11:11:48.823 [DEBUG][jboss.logging] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+01/04/2016 11:11:49.192 [INFO][common.Version] HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+01/04/2016 11:11:49.214 [INFO][hibernate.Version] HHH000412: Hibernate Core {4.2.10.Final}
+01/04/2016 11:11:49.225 [INFO][cfg.Environment] HHH000206: hibernate.properties not found
+01/04/2016 11:11:49.228 [INFO][cfg.Environment] HHH000021: Bytecode provider name : javassist
+01/04/2016 11:13:06.630 [DEBUG][jboss.logging] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+01/04/2016 11:13:06.913 [INFO][common.Version] HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+01/04/2016 11:13:06.935 [INFO][hibernate.Version] HHH000412: Hibernate Core {4.2.10.Final}
+01/04/2016 11:13:06.945 [INFO][cfg.Environment] HHH000206: hibernate.properties not found
+01/04/2016 11:13:06.949 [INFO][cfg.Environment] HHH000021: Bytecode provider name : javassist
+01/04/2016 11:14:51.813 [DEBUG][jboss.logging] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+01/04/2016 11:14:52.100 [INFO][common.Version] HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+01/04/2016 11:14:52.122 [INFO][hibernate.Version] HHH000412: Hibernate Core {4.2.10.Final}
+01/04/2016 11:14:52.132 [INFO][cfg.Environment] HHH000206: hibernate.properties not found
+01/04/2016 11:14:52.136 [INFO][cfg.Environment] HHH000021: Bytecode provider name : javassist
+01/04/2016 11:19:24.209 [DEBUG][jboss.logging] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+01/04/2016 11:19:24.492 [INFO][common.Version] HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+01/04/2016 11:19:24.513 [INFO][hibernate.Version] HHH000412: Hibernate Core {4.2.10.Final}
+01/04/2016 11:19:24.524 [INFO][cfg.Environment] HHH000206: hibernate.properties not found
+01/04/2016 11:19:24.527 [INFO][cfg.Environment] HHH000021: Bytecode provider name : javassist
+01/04/2016 11:19:25.359 [WARN][internal.DriverManagerConnectionProviderImpl] HHH000402: Using Hibernate built-in connection pool (not for production use!)
