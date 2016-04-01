@@ -19,3 +19,25 @@
 01/04/2016 11:19:24.524 [INFO][cfg.Environment] HHH000206: hibernate.properties not found
 01/04/2016 11:19:24.527 [INFO][cfg.Environment] HHH000021: Bytecode provider name : javassist
 01/04/2016 11:19:25.359 [WARN][internal.DriverManagerConnectionProviderImpl] HHH000402: Using Hibernate built-in connection pool (not for production use!)
+01/04/2016 11:28:09.372 [DEBUG][jboss.logging] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+01/04/2016 11:28:09.653 [INFO][common.Version] HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+01/04/2016 11:28:09.675 [INFO][hibernate.Version] HHH000412: Hibernate Core {4.2.10.Final}
+01/04/2016 11:28:09.685 [INFO][cfg.Environment] HHH000206: hibernate.properties not found
+01/04/2016 11:28:09.689 [INFO][cfg.Environment] HHH000021: Bytecode provider name : javassist
+01/04/2016 11:28:10.267 [WARN][internal.DriverManagerConnectionProviderImpl] HHH000402: Using Hibernate built-in connection pool (not for production use!)
+01/04/2016 11:28:10.316 [INFO][internal.DriverManagerConnectionProviderImpl] HHH000115: Hibernate connection pool size: 20
+01/04/2016 11:28:10.317 [INFO][internal.DriverManagerConnectionProviderImpl] HHH000006: Autocommit mode: true
+01/04/2016 11:28:10.319 [INFO][internal.DriverManagerConnectionProviderImpl] HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/guest_request]
+01/04/2016 11:28:10.321 [INFO][internal.DriverManagerConnectionProviderImpl] HHH000046: Connection properties: {user=app, password=****, autocommit=true, release_mode=auto}
+01/04/2016 11:28:11.168 [WARN][internal.JdbcServicesImpl] HHH000342: Could not obtain connection to query metadata : Access denied for user 'app'@'localhost' (using password: YES)
+01/04/2016 11:29:29.393 [DEBUG][jboss.logging] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+01/04/2016 11:29:29.510 [INFO][common.Version] HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+01/04/2016 11:29:29.520 [INFO][hibernate.Version] HHH000412: Hibernate Core {4.2.10.Final}
+01/04/2016 11:29:29.523 [INFO][cfg.Environment] HHH000206: hibernate.properties not found
+01/04/2016 11:29:29.525 [INFO][cfg.Environment] HHH000021: Bytecode provider name : javassist
+01/04/2016 11:29:29.753 [WARN][internal.DriverManagerConnectionProviderImpl] HHH000402: Using Hibernate built-in connection pool (not for production use!)
+01/04/2016 11:29:29.762 [INFO][internal.DriverManagerConnectionProviderImpl] HHH000115: Hibernate connection pool size: 20
+01/04/2016 11:29:29.762 [INFO][internal.DriverManagerConnectionProviderImpl] HHH000006: Autocommit mode: true
+01/04/2016 11:29:29.762 [INFO][internal.DriverManagerConnectionProviderImpl] HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/guest_request]
+01/04/2016 11:29:29.763 [INFO][internal.DriverManagerConnectionProviderImpl] HHH000046: Connection properties: {user=guest_request, password=****, autocommit=true, release_mode=auto}
+01/04/2016 11:29:30.111 [INFO][dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect

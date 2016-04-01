@@ -10,14 +10,14 @@
 
 		<properties>
 			<property name="javax.persistence.jdbc.driver" 
-						value="org.mysql.Driver" />
+						value="com.mysql.jdbc.Driver" />
 						
 			<property name="javax.persistence.jdbc.url" 
 							value="jdbc:mysql://localhost:3306/guest_request" />
 							
-			<property name="javax.persistence.jdbc.user" value="app" />
+			<property name="javax.persistence.jdbc.user" value="guest_request" />
 			
-			<property name="javax.persistence.jdbc.password" value="app" />
+			<property name="javax.persistence.jdbc.password" value="guest_request" />
 			
 			<property name="hibernate.hbm2ddl.auto" value="update" />
 
