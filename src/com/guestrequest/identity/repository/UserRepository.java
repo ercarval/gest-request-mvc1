@@ -4,6 +4,7 @@ import javax.annotation.PostConstruct;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.persistence.PersistenceContext;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -14,10 +15,10 @@ import com.guestrequest.shared.datasource.MegaDataSource;
 @Repository
 public class UserRepository {
 	
-	private EntityManagerFactory emf;
+	@PersistenceContext
+	private EntityManager em;
 
 	public UserRepository() {
-		emf = Persistence.createEntityManagerFactory("guestRequestPU");
 	}
 	
 	@PostConstruct
@@ -25,9 +26,6 @@ public class UserRepository {
 	}
 	
 	public User create (User user) {
-		
-		EntityManager em = emf.createEntityManager();
-		
 		em.getTransaction().begin();
 		em.persist(user);
 		em.getTransaction().commit();
@@ -36,8 +34,6 @@ public class UserRepository {
 	}
 	
 	public User update (User user) {
-		
-		EntityManager em = emf.createEntityManager();
 		
 		em.getTransaction().begin();
 		em.merge(user);
@@ -48,7 +44,6 @@ public class UserRepository {
 	
 	
 	public User findById ( Long id ) {	
-		EntityManager em = emf.createEntityManager();	
 		return em.find( User.class , id);		
 	}
 	
