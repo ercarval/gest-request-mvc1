@@ -35,6 +35,17 @@ public class UserRepository {
 		return user;
 	}
 	
+	public User update (User user) {
+		
+		EntityManager em = emf.createEntityManager();
+		
+		em.getTransaction().begin();
+		em.merge(user);
+		em.getTransaction().commit();
+		
+		return user;
+	}
+	
 	
 	public User findById ( Long id ) {	
 		EntityManager em = emf.createEntityManager();	

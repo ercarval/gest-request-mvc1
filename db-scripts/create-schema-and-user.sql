@@ -1,4 +1,4 @@
-create schema 'guest_request';
+create schema guest_request;
 
 CREATE USER 'guest_request'@'localhost' IDENTIFIED BY 'guest_request';
 

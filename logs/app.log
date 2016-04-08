@@ -41,3 +41,24 @@
 01/04/2016 11:29:29.762 [INFO][internal.DriverManagerConnectionProviderImpl] HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/guest_request]
 01/04/2016 11:29:29.763 [INFO][internal.DriverManagerConnectionProviderImpl] HHH000046: Connection properties: {user=guest_request, password=****, autocommit=true, release_mode=auto}
 01/04/2016 11:29:30.111 [INFO][dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+01/04/2016 11:57:38.744 [DEBUG][jboss.logging] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+01/04/2016 11:57:39.029 [INFO][common.Version] HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+01/04/2016 11:57:39.051 [INFO][hibernate.Version] HHH000412: Hibernate Core {4.2.10.Final}
+01/04/2016 11:57:39.061 [INFO][cfg.Environment] HHH000206: hibernate.properties not found
+01/04/2016 11:57:39.065 [INFO][cfg.Environment] HHH000021: Bytecode provider name : javassist
+01/04/2016 11:57:39.657 [WARN][internal.DriverManagerConnectionProviderImpl] HHH000402: Using Hibernate built-in connection pool (not for production use!)
+01/04/2016 11:57:39.678 [INFO][internal.DriverManagerConnectionProviderImpl] HHH000115: Hibernate connection pool size: 20
+01/04/2016 11:57:39.678 [INFO][internal.DriverManagerConnectionProviderImpl] HHH000006: Autocommit mode: true
+01/04/2016 11:57:39.679 [INFO][internal.DriverManagerConnectionProviderImpl] HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/guest_request]
+01/04/2016 11:57:39.680 [INFO][internal.DriverManagerConnectionProviderImpl] HHH000046: Connection properties: {user=guest_request, password=****, autocommit=true, release_mode=auto}
+01/04/2016 11:57:40.314 [INFO][dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+01/04/2016 11:57:40.758 [INFO][internal.TransactionFactoryInitiator] HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+01/04/2016 11:57:40.775 [INFO][ast.ASTQueryTranslatorFactory] HHH000397: Using ASTQueryTranslatorFactory
+01/04/2016 11:57:40.947 [INFO][util.Version] Hibernate Validator 4.2.0.Final
+01/04/2016 11:57:42.347 [INFO][hbm2ddl.SchemaUpdate] HHH000228: Running hbm2ddl schema update
+01/04/2016 11:57:42.348 [INFO][hbm2ddl.SchemaUpdate] HHH000102: Fetching database metadata
+01/04/2016 11:57:42.353 [INFO][hbm2ddl.SchemaUpdate] HHH000396: Updating schema
+01/04/2016 11:57:42.361 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: User
+01/04/2016 11:57:42.366 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: User
+01/04/2016 11:57:42.368 [INFO][sql.DatabaseMetaData] HHH000262: Table not found: User
+01/04/2016 11:57:42.939 [INFO][hbm2ddl.SchemaUpdate] HHH000232: Schema update complete

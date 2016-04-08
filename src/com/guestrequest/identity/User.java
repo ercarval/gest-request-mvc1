@@ -2,6 +2,7 @@ package com.guestrequest.identity;
 
 import java.io.Serializable;
 
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -9,16 +10,15 @@ import javax.persistence.Id;
 
 @Entity
 public class User implements Serializable {
-	
-	
-			
+
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
+
 	private String name;
 	private String email;
 
+	@Embedded
 	private Login login;
 
 	public User() {
@@ -29,11 +29,11 @@ public class User implements Serializable {
 		this.email = email;
 		this.login = login;
 	}
-	
+
 	public Long getId() {
 		return id;
 	}
-	
+
 	public void setId(Long id) {
 		this.id = id;
 	}
@@ -89,10 +89,7 @@ public class User implements Serializable {
 
 	@Override
 	public String toString() {
-		return "User [ id = " + id + ", name=" + name + ", email=" + email + ", login=" + login
-				+ "]";
+		return "User [ id = " + id + ", name=" + name + ", email=" + email + ", login=" + login + "]";
 	}
 
-	
-	
 }
