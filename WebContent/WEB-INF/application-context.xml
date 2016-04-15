@@ -14,5 +14,6 @@
 				
 	<mvc:annotation-driven />
 	
+	<import resource="application-context-db.xml"/>
 	
 </beans>

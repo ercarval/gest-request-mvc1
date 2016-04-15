@@ -1,5 +1,9 @@
 package com.guestrequest.identity.repository;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.support.FileSystemXmlApplicationContext;
+
 import com.guestrequest.identity.Login;
 import com.guestrequest.identity.User;
 
@@ -8,8 +12,14 @@ public class UserRepositoryIntegrationTest {
 	
 	public static void createUserTest () {
 		
+		ApplicationContext context 
+				
+				= new FileSystemXmlApplicationContext
+						("WebContent/WEB-INF/application-context.xml");
+				
 		
-		UserRepository repository = new UserRepository();
+		UserRepository repository = context.getBean("userRepository" 
+												, UserRepository.class);
 		
 		User user = new User ();
 		user.setLogin(new Login("admin", "admin"));

@@ -8,6 +8,7 @@ import javax.persistence.PersistenceContext;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.guestrequest.identity.User;
 import com.guestrequest.shared.datasource.MegaDataSource;
@@ -25,20 +26,15 @@ public class UserRepository {
 	public void init() {
 	}
 	
+	@Transactional
 	public User create (User user) {
-		em.getTransaction().begin();
 		em.persist(user);
-		em.getTransaction().commit();
-		
 		return user;
 	}
 	
+	@Transactional
 	public User update (User user) {
-		
-		em.getTransaction().begin();
 		em.merge(user);
-		em.getTransaction().commit();
-		
 		return user;
 	}
 	
