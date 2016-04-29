@@ -4,5 +4,5 @@ public enum AppointmentType {
 	
 	TECHNICAL,
 	COMMERCIAL,
-	OTHER
+	OTHER	
 }
