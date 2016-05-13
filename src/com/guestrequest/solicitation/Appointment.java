@@ -43,7 +43,8 @@ public class Appointment implements Serializable {
 	@ManyToOne()
 	@JoinColumn(name="requester_id")
 	private User requester;
-		
+	
+	@ManyToOne()
 	@JoinColumn(name="approver_id")
 	private User approver;
 	
