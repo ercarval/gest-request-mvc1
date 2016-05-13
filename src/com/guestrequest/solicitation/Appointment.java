@@ -43,8 +43,7 @@ public class Appointment implements Serializable {
 	@ManyToOne()
 	@JoinColumn(name="requester_id")
 	private User requester;
-	
-	
+		
 	@JoinColumn(name="approver_id")
 	private User approver;
 	
@@ -58,6 +57,7 @@ public class Appointment implements Serializable {
 	private List<Guest> guests;
 	
 	public Appointment() {
+		range = new DateRange();
 	}
 
 	
